@@ -453,7 +453,7 @@ describe('typeahead tests', function () {
       changeInputValueTo(element, 'c');
       expect(element).toBeClosed();
 
-      deferred.resolve(['good1', 'stuff']);
+      deferred.resolve(['good', 'stuff']);
       $scope.$digest();
       expect(element).toBeOpenWithActive(2, 0);
     });
